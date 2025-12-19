@@ -1,0 +1,82 @@
+/* Importamos Tailwind */
+@import "tailwindcss";
+@import '@phosphor-icons/web/regular';
+@import '@phosphor-icons/web/fill';
+/* Importamos las fuentes de Google */
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Lato:wght@300;400&family=Montserrat:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap');
+
+/* Configuramos el Tema Lumen Homes */
+@theme {
+  /* Tipografías */
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+  --font-lato: 'Lato', sans-serif;
+  --font-mono: 'Cutive Mono', monospace;
+
+  /* Paleta de Colores de Lujo */
+  --color-lumen-dark: #121212;
+  /* Onyx */
+  --color-lumen-card: #1A1E21;
+  /* Gunmetal suave */
+  --color-lumen-gold: #C5A059;
+  /* Gold */
+  --color-lumen-text: #F2F0EB;
+  /* Vellum */
+
+  /* Animación Ken Burns para el Hero */
+  --animate-ken-burns: ken-burns 20s ease-out infinite alternate;
+
+  @keyframes ken-burns {
+    0% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(1.1);
+    }
+  }
+}
+
+/* Estilos Base */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-lumen-dark);
+}
+
+/* Scrollbar Minimalista */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-lumen-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-lumen-gold);
+}
+
+/* ... resto de tu CSS ... */
+
+@layer base {
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #161819 inset !important;
+
+    -webkit-text-fill-color: white !important;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+
+    transition: background-color 5000s ease-in-out 0s;
+  }
+  input {
+    color-scheme: dark;
+  }
+}
