@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import logoImage from '../../assets/images/Logo Negative Transparent BG.png';
 
 export const Footer = () => {
 
     // Data for the columns to keep JSX clean
     const quickLinks = [
         { name: 'Home', href: '/' },
-        { name: 'About Us', href: '/about' },
+        { name: 'About Us', href: '/about-us' },
         { name: 'Services', href: '/services' },
     ];
 
@@ -42,7 +43,7 @@ export const Footer = () => {
                         <div className="flex flex-col items-center md:items-start mb-8">
                             <Link to="/" className="flex items-center cursor-pointer transition-opacity hover:opacity-80 shrink-0">
                                 <img
-                                    src="src\assets\images\Isotype Negative Transparent BG.png"
+                                    src={logoImage}
                                     alt="Lumen Homes Logo"
                                     // Fixed width classes: w-32 on mobile, w-48 on desktop
                                     className="w-32 md:w-48 h-auto object-contain"

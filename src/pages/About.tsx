@@ -2,6 +2,7 @@ import { Navbar } from '../components/layout/Navbar';
 import { Footer } from '../components/layout/Footer';
 import { Button } from '../components/ui/Button';
 import { Link } from 'react-router-dom';
+import logoImage from '../assets/images/Isotype Negative Transparent BG.png';
 
 export const About = () => {
     return (
@@ -96,7 +97,7 @@ export const About = () => {
             <section className="py-32 px-6">
                 <div className="max-w-4xl mx-auto text-center">
                     <img
-                        src="src\assets\images\Isotype Negative Transparent BG.png"
+                        src={logoImage}
                         alt="Lumen Seal"
                         className="h-24 w-auto mx-auto mb-8 invert sepia saturate-600 hue-rotate-30 brightness-75"
                     />

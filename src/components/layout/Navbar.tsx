@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Button } from '../ui/Button';
 import { Link } from 'react-router-dom';
+import logoImage from '../../assets/images/Logo Negative Transparent BG.png';
 export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -18,7 +19,7 @@ export const Navbar = () => {
                 {/* ================= LOGO SECTION FIXED ================= */}
                 <Link to="/" className="flex items-center cursor-pointer transition-opacity hover:opacity-80 shrink-0">
                     <img
-                        src="src\assets\images\Logo Negative Transparent BG.png"
+                        src={logoImage}
                         alt="Lumen Homes Logo"
                         className="w-35 md:w-48 h-auto max-h-35 object-contain"
                     />
@@ -71,9 +72,9 @@ export const Navbar = () => {
                         </Link>
                     ))}
                     <div className="pt-4">
-                        <a href="#apply" onClick={() => setIsMenuOpen(false)}>
+                        <Link to="/apply" onClick={() => setIsMenuOpen(false)}>
                             <Button variant="primary" className="w-full">APPLY NOW</Button>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
