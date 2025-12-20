@@ -6,12 +6,12 @@ import { Process } from './components/sections/Process';
 //import { Portfolio } from './components/sections/Portfolio';
 import { Pricing } from './components/sections/Pricing';
 import { Footer } from './components/layout/Footer';
-import { SEO } from './components/seo/Seo';
+import { Seo } from './components/seo/Seo';
 
 function App() {
   return (
     <>
-      <SEO
+      <Seo
         title="Luxury Property Management & Short-Term Rentals"
         description="Lumen Homes optimizes luxury real estate revenue through high-end property management. We turn chaotic rentals into passive, high-yield assets."
       />

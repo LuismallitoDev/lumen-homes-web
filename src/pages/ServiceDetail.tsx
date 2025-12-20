@@ -4,7 +4,7 @@ import { Navbar } from '../components/layout/Navbar';
 import { Footer } from '../components/layout/Footer';
 import { Button } from '../components/ui/Button';
 import { serviceData } from '../data/offers';
-import { SEO } from '../components/seo/Seo';
+import { Seo } from '../components/seo/Seo';
 
 export const ServiceDetail = () => {
     const { slug } = useParams<{ slug: string }>();
@@ -21,7 +21,7 @@ export const ServiceDetail = () => {
         <>
             {/* SEO DINÁMICO: Usa los datos del servicio real */}
             {service && (
-                <SEO
+                <Seo
                     title={service.title} // Ej: "LUMEN BLUEPRINT | Lumen Homes"
                     description={service.thesis} // Usamos la tesis como meta description
                 />

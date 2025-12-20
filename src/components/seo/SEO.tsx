@@ -7,7 +7,7 @@ interface SEOProps {
     canonical?: string;
 }
 
-export const SEO = ({ title, description, canonical }: SEOProps) => {
+export const Seo = ({ title, description, canonical }: SEOProps) => {
     const currentUrl = window.location.href;
     return (
         <Helmet>
