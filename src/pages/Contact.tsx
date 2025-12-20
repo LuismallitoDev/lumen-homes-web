@@ -18,7 +18,7 @@ export const Contact = () => {
     });
 
     // 2. Configuración de WhatsApp
-    const whatsappNumber = "3233353753";
+    const whatsappNumber = "+57 3233353753";
     const whatsappMessage = "Hello, I am interested in Lumen Homes management services. I would like to speak with a concierge.";
     // Creamos el link codificado para que funcione en todos los navegadores
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
@@ -112,9 +112,9 @@ export const Contact = () => {
                                 <i className="ph-fill ph-map-pin text-lumen-gold text-lg"></i> Headquarters
                             </h3>
                             <address className="not-italic text-white/60 font-light">
-                                100 Luxury Blvd, Suite 500<br />
-                                Miami, FL 33131<br />
-                                United States
+                                Cra 47D #77 - 111 Laureles, Estadio<br />
+                                Medellin, Antioquia 050032<br />
+                                Republic of Colombia
                             </address>
                         </div>
                     </div>
