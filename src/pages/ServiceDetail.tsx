@@ -4,7 +4,7 @@ import { Navbar } from '../components/layout/Navbar';
 import { Footer } from '../components/layout/Footer';
 import { Button } from '../components/ui/Button';
 import { serviceData } from '../data/offers';
-import { Seo } from '../components/seo/Seo';
+import { Seo } from '../components/seo/LumenSeo';
 
 export const ServiceDetail = () => {
     const { slug } = useParams<{ slug: string }>();

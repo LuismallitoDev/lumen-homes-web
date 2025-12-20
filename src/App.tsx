@@ -6,7 +6,7 @@ import { Process } from './components/sections/Process';
 //import { Portfolio } from './components/sections/Portfolio';
 import { Pricing } from './components/sections/Pricing';
 import { Footer } from './components/layout/Footer';
-import { Seo } from './components/seo/Seo';
+import { Seo } from './components/seo/LumenSeo';
 
 function App() {
   return (
