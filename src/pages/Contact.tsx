@@ -18,7 +18,7 @@ export const Contact = () => {
     });
 
     // 2. Configuración de WhatsApp
-    const whatsappNumber = "+57 3233353753";
+    const whatsappNumber = "573233353753";
     const whatsappMessage = "Hello, I am interested in Lumen Homes management services. I would like to speak with a concierge.";
     // Creamos el link codificado para que funcione en todos los navegadores
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
