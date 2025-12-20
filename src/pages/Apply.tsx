@@ -144,17 +144,7 @@ export const Apply = () => {
                         <p className="font-lato text-white/80 text-lg mb-12 font-light leading-relaxed max-w-md drop-shadow-md">
                             We are selective with the properties we manage. Submit your details for a comprehensive asset audit. If your property meets the Lumen Standard, we will contact you within 48 hours.
                         </p>
-                        <div className="mt-20 flex items-center gap-6 p-6 bg-white/5 border border-white/5 backdrop-blur-sm rounded-sm">
-                            <div className="w-12 h-12 rounded-full bg-lumen-gold/10 flex items-center justify-center text-lumen-gold">
-                                <i className="ph-fill ph-shield-check text-2xl"></i>
-                            </div>
-                            <div>
-                                <h4 className="font-playfair text-white text-lg mb-1">Asset Protection</h4>
-                                <p className="font-lato text-xs text-white/50 leading-relaxed">
-                                    Your application is encrypted. We maintain strict confidentiality regarding all our managed assets and owners' identities.
-                                </p>
-                            </div>
-                        </div>
+
                         <div className="border-t border-white/20 pt-8 mt-auto">
                             <div className="flex gap-12">
                                 <div>
